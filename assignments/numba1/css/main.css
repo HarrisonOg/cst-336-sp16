@@ -1,0 +1,44 @@
+body {
+      background-color: orange;
+}
+#topTitle{
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.875em;
+      padding-bottom: 7px;
+}
+#headphones{
+    width: 333px;
+    padding: 3px;
+    border-style: solid;
+    float: right;
+}
+.codeExImg{
+    border-style: solid;
+    border-width: medium;
+}
+.navList {
+      list-style-type: none;
+      padding: 7px;
+      margin: 0px;
+      border-style: solid;
+}
+    
+.navList li {
+      display: inline;
+      padding-left: 45px;
+      padding-right: 45px;
+      border-style: solid;
+}
+.navList li:hover{
+      background-color:yellow;
+}
+table , td, th{
+      border-collapse: collapse;
+      border: 2px solid black;
+}
+h2 + img {
+    width:50px;
+    float: right; 
+    margin-left: 50px;
+}

@@ -1,0 +1,53 @@
+body {
+      background-color: lightblue;
+}
+#ppimg{
+      border-style: solid;
+      border-width: medium;
+}
+#panel{
+      background-color: orange;
+      margin: 0 auto;
+      width: 800px;
+      
+}
+#topTitle{
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.875em;
+      
+}
+.active {
+      color: #690809;
+      text-decoration: none;
+}
+    
+.navList {
+      list-style-type: none;
+      padding: 7px;
+      margin: 0px;
+}
+    
+.navList li {
+      display: inline;
+      padding-left: 17px;
+      padding-right: 17px;
+}
+.navList li:hover{
+      background-color:yellow;
+}
+.statsTitle{
+      background-color: #7FFF00;
+      font-weight: bold;
+      text-align: center;
+}
+.blueRow{
+      background-color: #0EBFE9;
+}
+table.statsTable, td, th{
+      border-collapse: collapse;
+      border: 2px solid black;
+}
+.lightB{
+      background-color: #C3E4ED;
+}
