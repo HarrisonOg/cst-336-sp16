@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <div>
+        <span>Phone Number: </span>
+        <input type="text" name="phoneNumber" id="phoneNumber" />
+        <button>Validate</button>
+    </div>
+
+    <div id="results">
+
+    </div>
+
+    <script>
+        $(document).ready(function() {
+
+
+            $('button').click(function(e) {
+
+                // JavaScript version, which we DO NOT need right now
+                //var htmlUserName = $('#userName').get(0);
+                console.log($('#phoneNumber').val());
+
+                var phoneNumber = $('#phoneNumber').val();
+                
+                if (phoneNumber.length != 10) {
+                    $('#results').html('Too Long!');
+                }
+                //else if (!/[0-9]/.test(phoneNumber)) {
+                else if (!/(?=(.*\d){3})/.test(phoneNumber)) {
+                    $('#results').html('Must Be At Least 3 Numbers!');
+                }
+                else if (/\D/.test(phoneNumber)) {
+                    $('#results').html('Must Be All Numbers!');
+                }
+                else {
+                    $('#results').html('Looks Good.');
+                }
+
+                //e.preventDefault();
+            })
+
+        });
+    </script>
+
+</body>
+
+</html>
